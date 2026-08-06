@@ -5,96 +5,12 @@ body {
     color: #222;
 }
 
-#sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 220px;
-    background-color: #f8f9fa;
-    padding-top: 60px;
-    border-right: 1px solid #ddd;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    z-index: 1000;
-}
-
-
-#sidebar.hide {
-    transform: translateX(-100%);
-}
-
 #main-content {
     transition: transform 0.3s ease;
 }
 
 #main-content.shifted {
     transform: translateX(250px);
-}
-
-#sidebar.show {
-    transform: translateX(0);
-}
-
-#toggle-btn {
-    position: absolute;
-    top: 0.25rem;
-    left:1rem;
-    z-index: 1100;
-    background-color: transparent;
-    color: white;
-    border: none;
-    padding: 10px 12px;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-#toggle-btn:hover {
-    background-color: #00b894;
-}
-
-.offcanvas-body h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 0;
-}
-
-.offcanvas-body a {
-    display: block;
-    padding: 12px 20px;
-    color: #6c757d;
-    transition: background-color 0.2s;
-    text-decoration: none;
-}
-
-.offcanvas-body a:hover {
-    background-color: #e9ecef;
-    color: #000;
-}
-
-.offcanvas-body i.con {
-    margin-right: 10px;
-}
-
-.offcanvas-body p {
-    margin-left: 20px;
-    font-weight: 600;
-    margin-top: 20px;
-}
-
-.icon-gap {
-    margin-right: 10px;
-}
-
-#timesheet-section {
-    display: none;
-}
-
-hr {
-    margin: 15px 0;
-    border: none;
-    border-top: 1px solid #ccc;
-    width: 80%;
-    margin-left: 10%;
 }
 
 header {
@@ -241,3 +157,14 @@ header {
     border-radius: 3px;
 }
 
+.close-modal {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    color: #636e72;
+    cursor: pointer;
+    font-weight: bold;
+    transition: color 0.2s;
+    background: transparent;
+}
