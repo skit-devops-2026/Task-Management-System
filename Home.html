@@ -56,6 +56,20 @@
                 </div>
             </div>
         </header>
+        
+         <main>
+            <div class="task-panel">
+                <h2>All Tasks</h2>
+                <button class="add-btn" id="show-task-form">+ Add Task</button>
+                <form id="task-form" style="display:none;" action="Home.php" method="post">
+                    <input type="text" id="title" name="title" placeholder="Title" required />
+                    <textarea id="description" name="description" placeholder="Description" required></textarea>
+                    <input type="date" name="date" id="due_date" required />
+                    <button type="submit">Submit</button>                    
+                </form>
+            </div>
+        </main>
+
         <!-- footer -->
         <footer class="tm-footer">
             <div class="tm-footer-main">
@@ -63,7 +77,7 @@
                     <i class="fa-solid fa-layer-group"></i>Organizr
                 </div>
                 <div class="tm-col">
-                    <a href="Home.php">
+                    <a href="Home.html">
                         <h4>Home</h4><br>
                     </a>
                     <a href="About_Us.html">About us</a><br>
@@ -72,7 +86,7 @@
                 </div>
                 <div class="tm-col">
                     <h4>Support</h4><br>
-                    <a href="Contact.php">Contact</a><br>
+                    <a href="Contact.html">Contact</a><br>
                     <a href="Help_Centre.html">Help Center</a><br>
                     <a href="Privacy_Policy.html">Privacy Policy</a>
                 </div>
