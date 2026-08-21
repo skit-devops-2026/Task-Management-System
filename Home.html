@@ -9,6 +9,27 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+     <button id="toggle-btn"><i class="fas fa-bars"></i></button>
+    <div id="sidebar" class="hide">
+        <div class="offcanvas-body">
+            <h1 class="text-xs"><i class="fa-solid fa-layer-group"></i>Organizr</h1>
+            <a class="iconsonbar button text-muted" href="Home.html">
+                <i class="con fas fa-search p-2"></i>Home
+            </a>
+            <a class="iconsonbar button text-muted" href="Search.html">
+                <i class="con fas fa-search p-2"></i>Search
+            </a>
+            <a class="iconsonbar button text-muted" href="#" id="sidebar-add-task">
+                <i class="con fas fa-plus p-2"></i>Add Task
+            </a>
+            <hr>
+            <p class="fw-semibold mtdd">My Tasks</p>
+            <a class="text-start iconsonbar2" href="All_Tasks.html">
+                <i class="fas fa-check icon-gap"></i>All Tasks
+            </a>
+        </div>
+    </div>
+
     <div id="main-content">
         <header>
             <div class="logo">
@@ -61,7 +82,7 @@
             <div class="task-panel">
                 <h2>All Tasks</h2>
                 <button class="add-btn" id="show-task-form">+ Add Task</button>
-                <form id="task-form" style="display:none;" action="Home.php" method="post">
+                <form id="task-form" style="display:none;" action="Home.html" method="post">
                     <input type="text" id="title" name="title" placeholder="Title" required />
                     <textarea id="description" name="description" placeholder="Description" required></textarea>
                     <input type="date" name="date" id="due_date" required />
@@ -101,5 +122,6 @@
             </div>
         </footer>
     </div>
+    <script src="Script/sidebar.js"></script>
 </body>
 </html>
