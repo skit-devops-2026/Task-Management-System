@@ -33,6 +33,70 @@ body {
     transform: translateX(250px);
 }
 
+#sidebar.show {
+    transform: translateX(0);
+}
+#toggle-btn {
+    position: absolute;
+    top: 0.25rem;
+    left:1rem;
+    z-index: 1100;
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 10px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#toggle-btn:hover {
+    background-color: #00b894;
+}
+
+.offcanvas-body h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0;
+}
+
+.offcanvas-body a {
+    display: block;
+    padding: 12px 20px;
+    color: #6c757d;
+    transition: background-color 0.2s;
+    text-decoration: none;
+}
+
+.offcanvas-body a:hover {
+    background-color: #e9ecef;
+    color: #000;
+}
+
+.offcanvas-body i.con {
+    margin-right: 10px;
+}
+
+.offcanvas-body p {
+    margin-left: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.icon-gap {
+    margin-right: 10px;
+}
+
+#timesheet-section {
+    display: none;
+}
+
+hr {
+    margin: 15px 0;
+    border: none;
+    border-top: 1px solid #ccc;
+    width: 80%;
+    margin-left: 10%;
+}
+
 header {
     display: flex;
     justify-content: space-between;
