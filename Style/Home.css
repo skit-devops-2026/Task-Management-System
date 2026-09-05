@@ -19,7 +19,6 @@ body {
     z-index: 1000;
 }
 
-
 #sidebar.hide {
     transform: translateX(-100%);
 }
